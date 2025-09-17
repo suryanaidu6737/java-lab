@@ -1,26 +1,27 @@
 import java.util.*;
 interface Read
 {
-	void read();
-	void add();
-	void sub();
+	public void read();
+	public void add();
+	public void sub();
 }
 class A implements Read
 {
-	void read()
+	int a,b;
+	public void read()
 	{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("eter a,b values");
-		int a=sc.nextInt();
-		int b=sc.nextInt();
+		 a=sc.nextInt();
+		 b=sc.nextInt();
 	}
-	void add()
+	public void add()
 	{
-		System.out.println("add of a,b"+(a+b));
+		System.out.println("add of a,b: "+(a+b));
 	}
-	void sub()
+	public void sub()
 	{
-		System.out.println("sub of a,b"+(a-b));
+		System.out.println("sub of a,b: "+(a-b));
 	}
 }
 class Interface
